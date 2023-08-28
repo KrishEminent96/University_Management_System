@@ -3,6 +3,7 @@ package Int;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFrame;
 
 
 public class Home extends javax.swing.JFrame {
@@ -10,6 +11,8 @@ public class Home extends javax.swing.JFrame {
     
     public Home() {
         initComponents();
+        setExtendedState(JFrame.MAXIMIZED_BOTH); /*** To stay maximized the jFrame ***/
+
     }
 
     

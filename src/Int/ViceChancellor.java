@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import net.proteanit.sql.DbUtils;
 
@@ -19,6 +20,7 @@ public class ViceChancellor extends javax.swing.JFrame {
     
     public ViceChancellor() {
         initComponents();
+        setExtendedState(JFrame.MAXIMIZED_BOTH); /*** To stay maximized the jFrame ***/
         conn = dbConnect.connect();  // _*_*_Connecting dbConnect class to ViceChancellor class at the start_*_*_* 
         ResultSet rs = null;
                 tableload();

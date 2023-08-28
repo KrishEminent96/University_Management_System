@@ -22,6 +22,7 @@ public class about extends javax.swing.JFrame {
      */
     public about() {
         initComponents();
+        setExtendedState(JFrame.MAXIMIZED_BOTH); /*** To stay maximized the jFrame ***/
     }
     
     @SuppressWarnings("unchecked")

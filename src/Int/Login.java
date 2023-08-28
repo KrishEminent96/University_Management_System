@@ -2,6 +2,7 @@
 package Int;
 
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 
@@ -11,7 +12,8 @@ public class Login extends javax.swing.JFrame {
     public Login() {
          
         initComponents();
-        
+        setExtendedState(JFrame.MAXIMIZED_BOTH); /*** To stay maximized the jFrame ***/
+
        
     }
   

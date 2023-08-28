@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import net.proteanit.sql.DbUtils;
 
@@ -20,6 +21,7 @@ public class Lecturer extends javax.swing.JFrame {
     
     public Lecturer() {
         initComponents();
+        setExtendedState(JFrame.MAXIMIZED_BOTH); /*** To stay maximized the jFrame ***/
         conn = dbConnect.connect();  // _*_*_Connecting dbConnect class to Lecturer class at the start_*_*_* 
         ResultSet rs = null;
         tableload();

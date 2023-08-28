@@ -5,6 +5,7 @@ package Int;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import javax.swing.JFrame;
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
 
@@ -15,6 +16,8 @@ public class Welcome extends javax.swing.JFrame {
  
     public Welcome() {
         initComponents();
+                        setExtendedState(JFrame.MAXIMIZED_BOTH); /*** To stay maximized the jFrame ***/
+
         
       
         
